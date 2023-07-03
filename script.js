@@ -11,5 +11,8 @@ function reloj(){
     let horaActual =  hr + ":" + min + ":" + seg 
     console.log (horaActual)
 
+    setTimeout(()=>{
+        reloj()
+    },2000)
 }
 reloj()
